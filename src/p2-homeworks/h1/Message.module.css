@@ -1,11 +1,12 @@
 .message {
-
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 60px);
     max-width: 240px;
     grid-auto-rows: minmax(auto, auto);
     background-color: greenyellow;
     border-radius: 5px;
+
 }
 
 .ava {

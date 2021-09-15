@@ -11,9 +11,12 @@ type MessageProps = {
 
 function Message(props: MessageProps) {
     return (
+
         <div className={styles.message}>
 
-            <div><img src={props.avatar} className={styles.ava} alt=""/></div>
+            <div>
+                <img src={props.avatar} className={styles.ava} alt=""/>
+            </div>
             <div className={styles.chat}>
                 <div className={styles.name}>{props.name}</div>
                 <div className={styles.text}>{props.message}</div>
