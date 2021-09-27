@@ -1,0 +1,9 @@
+.span {
+    background-image: url("./pencil.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-size: 25px;
+    font-family: Consolas, sans-serif;
+
+}

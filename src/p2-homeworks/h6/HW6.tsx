@@ -10,11 +10,11 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        setValue(restoreState('editable-span-value', value))
     }
 
     return (
-        <div>
+        <div style={{ textAlign: "center"}}>
             <hr/>
             homeworks 6
 
