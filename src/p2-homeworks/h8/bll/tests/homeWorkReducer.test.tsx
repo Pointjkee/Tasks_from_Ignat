@@ -14,19 +14,23 @@ beforeEach(() => {
     ]
 })
 
+
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
 
-    console.log(newState)
-    // expect(...).toBe(...)
+    expect(newState[0]).toStrictEqual( {_id: 0, name: 'Кот', age: 3})
+    // expect(newState[1]).toBe({_id: 2, name: 'Коля', age: 16})
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
-
+    expect(newState[0]).toStrictEqual( {_id: 1, name: 'Александр', age: 66})
 
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
-
+    expect(newState[0]).toStrictEqual( {_id: 1, name: 'Александр', age: 66})
+    expect(newState[1]).toStrictEqual(  {_id: 3, name: 'Виктор', age: 44})
+    expect(newState[2]).toStrictEqual(  {_id: 4, name: 'Дмитрий', age: 40})
+    expect(newState[3]).toStrictEqual(  {_id: 5, name: 'Ирина', age: 55})
 
 })
