@@ -13,11 +13,11 @@ function App() {
         <div className={s.App}>
             <div>react homeworks:</div>
             <HW5/>
-            <HW6/>
+          {/*  <HW6/>
             <HW7/>
             <HW8/>
             <HW9/>
-            <HW10/>
+            <HW10/>*/}
 
         </div>
     )
